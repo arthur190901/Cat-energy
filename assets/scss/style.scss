@@ -47,6 +47,7 @@ $mobile: 767px;
       justify-content: space-between;
       max-width: 100%;
       margin: 0 auto;
+      margin-bottom: 20px;
     }
 
     a {
@@ -62,6 +63,8 @@ $mobile: 767px;
     }
 
     &__logo {
+      width: 202px;
+      height: 59px;
       margin-top: 55px;
     }
 
@@ -79,7 +82,9 @@ $mobile: 767px;
 
   .main {
     .programm {
+      display: grid;
       margin-left: 80px;
+      margin-bottom: 265px;
       &__text {
         font-size: 60px;
         line-height: 60px;
@@ -90,7 +95,7 @@ $mobile: 767px;
       &__text2 {
         font-size: 20px;
         line-height: 20px;
-        margin-bottom: 43px;
+        margin-bottom: 52px;
       }
 
       &__button {
@@ -104,6 +109,11 @@ $mobile: 767px;
         color: #fff;
         background-color: $green;
         cursor: pointer;
+      }
+
+      &__pic {
+        position: absolute;
+        left: 638px;
       }
     }
   }
