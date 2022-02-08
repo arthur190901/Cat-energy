@@ -114,6 +114,27 @@
     position: absolute;
     left: 638px;
   }
+
+  .index-cotalog__item {
+    display: -ms-grid;
+    display: grid;
+  }
+  .index-cotalog__bar {
+    width: 570px;
+    height: auto;
+    background-color: #F2F2F2;
+  }
+  .index-cotalog h2 {
+    font-size: 36px;
+  }
+  .index-cotalog__text {
+    font-size: 16px;
+  }
+  .index-cotalog a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+  }
 }
 @media (max-width: 767px) {
   .main-header ul {

@@ -85,6 +85,7 @@ $mobile: 767px;
       display: grid;
       margin-left: 80px;
       margin-bottom: 265px;
+
       &__text {
         font-size: 60px;
         line-height: 60px;
@@ -115,6 +116,34 @@ $mobile: 767px;
         position: absolute;
         left: 638px;
       }
+    }
+  }
+
+  .index-cotalog {
+    &__item {
+      display: grid;
+    }
+
+    &__bar {
+      // display: flex;
+      // flex-wrap: wrap;
+      width: 570px;
+      height: auto;
+      background-color: $special-grey_2;
+    }
+
+    h2 {
+      font-size: 36px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 20px;
+      color: #000;
     }
   }
 }
