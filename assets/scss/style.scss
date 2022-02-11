@@ -84,7 +84,7 @@ $mobile: 767px;
     .programm {
       display: grid;
       margin-left: 80px;
-      margin-bottom: 265px;
+      margin-bottom: 146px;
 
       &__text {
         font-size: 60px;
@@ -113,8 +113,13 @@ $mobile: 767px;
       }
 
       &__pic {
-        position: absolute;
-        left: 638px;
+        top: 30px;
+        bottom: auto;
+        width: 552px;
+        height: 499px;
+        margin-left: 408px;
+        margin-top: -370px;
+        z-index: 0;
       }
     }
   }
@@ -168,6 +173,42 @@ $mobile: 767px;
         width: 20%;
         list-style: none;
       }
+    }
+  }
+
+  .example {
+    background-color: $special-grey_2;
+    &__heading {
+      font-size: 60px;
+      font-weight: lighter;
+    }
+  }
+
+  .cat-advantage {
+    background-color: $special-grey_2;
+    // display: grid;
+  }
+
+  .footer {
+    background-color: $special-grey_2;
+    &__section2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__list {
+      display: flex;
+    }
+
+    &__item {
+      list-style: none;
+    }
+
+    &__link {
+      text-decoration: none;
+      color: $special-grey;
     }
   }
 // }

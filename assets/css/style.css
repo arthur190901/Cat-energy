@@ -82,7 +82,7 @@
   display: -ms-grid;
   display: grid;
   margin-left: 80px;
-  margin-bottom: 265px;
+  margin-bottom: 146px;
 }
 .main .programm__text {
   font-size: 60px;
@@ -110,8 +110,13 @@
   cursor: pointer;
 }
 .main .programm__pic {
-  position: absolute;
-  left: 638px;
+  top: 30px;
+  bottom: auto;
+  width: 552px;
+  height: 499px;
+  margin-left: 408px;
+  margin-top: -370px;
+  z-index: 0;
 }
 
 .index-cotalog__item {
@@ -164,4 +169,45 @@
 .item-list .item-row__item {
   width: 20%;
   list-style: none;
+}
+
+.example {
+  background-color: #F2F2F2;
+}
+.example__heading {
+  font-size: 60px;
+  font-weight: lighter;
+}
+
+.cat-advantage {
+  background-color: #F2F2F2;
+}
+
+.footer {
+  background-color: #F2F2F2;
+}
+.footer__section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer__item {
+  list-style: none;
+}
+.footer__link {
+  text-decoration: none;
+  color: #444;
 }
