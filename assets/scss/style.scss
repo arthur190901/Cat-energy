@@ -21,11 +21,20 @@ $mobile: 767px;
   overflow: hidden;
 }
 
+.container {
+  // width: 1220px;
+  // margin: 0 auto;
+}
+
 // @media (min-width: $desktop) {
-  .container {
+  .body {
     font-family: 'Oswald', sans-serif;
     margin: 0 auto;
     width: 1220px;
+    // margin: 0;
+    // padding: 0;
+    min-height: 100%;
+    min-width: 1220px;
     background-image: url('../img/index-background-desktop.png');
     background-repeat: no-repeat;
     background-position: 100% 0;
@@ -81,6 +90,7 @@ $mobile: 767px;
 
 
   .main {
+    
     .programm {
       display: grid;
       margin-left: 80px;
@@ -126,7 +136,7 @@ $mobile: 767px;
 
   .index-cotalog {
     &__item { 
-      width: 570px;
+      padding: 55px 42px;
       height: auto;
       background-color: $special-grey_2;
       display: grid;
@@ -190,8 +200,27 @@ $mobile: 767px;
   }
 
   .footer {
-    background-color: $special-grey_2;
+    &__section {
+      display: flex;
+      padding: 64px 76px 52px;
+      background-color: #fff;
+    }
+
+    &__text {
+      font-size: 20px;
+      margin: 0;
+    }
+
+    &__text2 {
+      margin: 0;
+    }
+
+    &__map {
+      background-color: $special-grey_2;
+    }
+
     &__section2 {
+      background-color: $special-grey_2;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;

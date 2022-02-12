@@ -13,10 +13,12 @@
   overflow: hidden;
 }
 
-.container {
+.body {
   font-family: "Oswald", sans-serif;
   margin: 0 auto;
   width: 1220px;
+  min-height: 100%;
+  min-width: 1220px;
   background-image: url("../img/index-background-desktop.png");
   background-repeat: no-repeat;
   background-position: 100% 0;
@@ -120,7 +122,7 @@
 }
 
 .index-cotalog__item {
-  width: 570px;
+  padding: 55px 42px;
   height: auto;
   background-color: #F2F2F2;
   display: -ms-grid;
@@ -183,10 +185,25 @@
   background-color: #F2F2F2;
 }
 
-.footer {
+.footer__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 64px 76px 52px;
+  background-color: #fff;
+}
+.footer__text {
+  font-size: 20px;
+  margin: 0;
+}
+.footer__text2 {
+  margin: 0;
+}
+.footer__map {
   background-color: #F2F2F2;
 }
 .footer__section2 {
+  background-color: #F2F2F2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
