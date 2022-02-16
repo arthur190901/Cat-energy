@@ -233,6 +233,12 @@
   background-color: #dcdcdc;
   border: 0;
 }
+.cat-advantage__button {
+  font-family: inherit;
+  font-size: 20px;
+  border: none;
+  text-transform: uppercase;
+}
 
 .footer {
   background-color: #F2F2F2;
@@ -282,6 +288,7 @@
 }
 .footer__item {
   list-style: none;
+  margin-right: 25px;
 }
 .footer__link {
   text-decoration: none;
