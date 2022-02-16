@@ -51,7 +51,7 @@ $mobile: 767px;
       margin: 0 auto;
     }
 
-    ul {
+    &__list {
       display: flex;
       justify-content: space-between;
       margin-top: 71px;
@@ -89,7 +89,7 @@ $mobile: 767px;
       list-style: none;
     }
 
-    .menu-button {
+    &__button {
       display: none;
     }
   }
@@ -155,7 +155,7 @@ $mobile: 767px;
       flex-wrap: wrap;
     }
 
-    h2 {
+    &__heading {
       font-weight: lighter;
       font-size: 36px;
     }
@@ -164,7 +164,7 @@ $mobile: 767px;
       font-size: 16px;
     }
 
-    a {
+    &__link {
       text-decoration: none;
       font-size: 20px;
       color: $black;
@@ -186,10 +186,14 @@ $mobile: 767px;
     &__pic2 {
       margin-right: 47px;
     }
+
+    &__arrow {
+      margin-left: 26px;
+    }
   }
 
   .item-list {
-    h3 {
+    &__heading {
       font-weight: lighter;
       font-size: 60px;
     }
