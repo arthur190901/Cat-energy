@@ -169,6 +169,23 @@ $mobile: 767px;
       font-size: 20px;
       color: $black;
     }
+
+    &__container {
+      width: 467px;
+      display: flex;
+      flex-grow: 1;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+
+    &__pic1 {
+      margin-right: 60px;
+    }
+
+    &__pic2 {
+      margin-right: 47px;
+    }
   }
 
   .item-list {
@@ -218,13 +235,19 @@ $mobile: 767px;
     background-color: $special-grey_2;
     &__section {
       display: flex;
+      position: relative;
       padding: 64px 76px 52px;
       background-color: $white;
+      max-width: 1220px;
+      width: 408px;
+      top: 330px;
+      z-index: 2;
     }
 
     &__text {
       font-size: 20px;
       margin: 0;
+      max-width: 163px;
     }
 
     &__text2 {
