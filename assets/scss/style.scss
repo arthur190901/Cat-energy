@@ -4,6 +4,7 @@ $white: #fff;
 $black: #000;
 $special-grey: #444;
 $special-grey_2: #F2F2F2;
+$special-grey_3: #dcdcdc;
 $green: #68B738;
 $special-green: #5eaa2f;
 
@@ -233,18 +234,26 @@ $mobile: 767px;
       width: 1220px;
       margin: 0 auto;
     }
+
+    &__taggle {
+      width: 428px;
+      height: 6px;
+      background-color: $special-grey_3;
+      border: 0;
+    }
   }
 
   .footer {
     background-color: $special-grey_2;
     &__section {
+      height: 84px;
       display: flex;
       position: relative;
       padding: 64px 76px 52px;
       background-color: $white;
       max-width: 1220px;
       width: 408px;
-      top: 330px;
+      top: 310px;
       z-index: 2;
     }
 
@@ -289,6 +298,7 @@ $mobile: 767px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 40px 0;
     }
   }
 // }

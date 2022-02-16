@@ -227,11 +227,18 @@
   width: 1220px;
   margin: 0 auto;
 }
+.cat-advantage__taggle {
+  width: 428px;
+  height: 6px;
+  background-color: #dcdcdc;
+  border: 0;
+}
 
 .footer {
   background-color: #F2F2F2;
 }
 .footer__section {
+  height: 84px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -240,7 +247,7 @@
   background-color: #fff;
   max-width: 1220px;
   width: 408px;
-  top: 330px;
+  top: 310px;
   z-index: 2;
 }
 .footer__text {
@@ -292,4 +299,5 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 40px 0;
 }
