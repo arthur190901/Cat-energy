@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
+@font-face {
+	font-family: 'Arial', sans-serif;
+	src: url('../fonts/arial.eot');
+	src: local('☺'), url('../fonts/arial.woff') format('woff'), url('../fonts/arial.ttf') format('truetype'), url('../fonts/arial.svg') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
 $white: #fff;
 $black: #000;
 $special-grey: #444;
@@ -97,7 +105,6 @@ $mobile: 767px;
 
 
   .main {
-    
     .programm {
       display: grid;
       margin-left: 80px;
@@ -157,11 +164,12 @@ $mobile: 767px;
     }
 
     &__heading {
-      font-weight: lighter;
+      font-weight: 300;
       font-size: 36px;
     }
 
     &__text {
+      font-family: 'Arial', sans-serif;
       font-size: 16px;
     }
 
@@ -198,8 +206,10 @@ $mobile: 767px;
       font-weight: lighter;
       font-size: 60px;
     }
-    p {
-      font-size: 12px;
+
+    &__text {
+      font-family: 'Arial', sans-serif;
+      font-size: 16px;
     }
 
     .item-row {
@@ -224,6 +234,15 @@ $mobile: 767px;
     &__container {
       width: 1220px;
       margin: 0 auto;
+    }
+
+    &__text {
+      font-family: 'Arial', sans-serif;
+      font-size: 16px;
+    }
+
+    &__small {
+      font-family: 'Arial', sans-serif;
     }
   }
 
@@ -271,6 +290,8 @@ $mobile: 767px;
     }
 
     &__text2 {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
       margin: 0;
     }
 
@@ -296,6 +317,8 @@ $mobile: 767px;
     }
 
     &__link {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
       text-decoration: none;
       color: $special-grey;
     }
