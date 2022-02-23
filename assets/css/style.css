@@ -233,6 +233,13 @@
 .item-list .item-row__item {
   width: 20%;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.item-list .item-row__item::after {
+  content: url("../img/number1.png");
+  position: absolute;
 }
 
 .example {
@@ -331,6 +338,10 @@
   font-size: 16px;
   text-decoration: none;
   color: #444;
+}
+.footer__link::after {
+  content: url("../img/Лого_html1.png");
+  margin-left: 22px;
 }
 .footer__container {
   width: 1220px;

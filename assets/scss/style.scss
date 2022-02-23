@@ -215,6 +215,8 @@ $mobile: 767px;
   }
 
   .item-list {
+    // background-color: rgba($color: $white, $alpha: 0.7);
+
     &__heading {
       font-weight: lighter;
       font-size: 60px;
@@ -231,6 +233,7 @@ $mobile: 767px;
       margin-top: 31px;
       font-size: 16px;
       line-height: 24px;
+      // z-index: 2;
     }
 
     .item-row {
@@ -241,6 +244,13 @@ $mobile: 767px;
       &__item {
         width: 20%;
         list-style: none;
+        display: flex;
+      }
+
+      &__item::after {
+        content: url('../img/number1.png');
+        position: absolute;
+        // z-index: 1;
       }
     }
   }
@@ -344,6 +354,11 @@ $mobile: 767px;
       color: $special-grey;
     }
 
+    &__link::after {
+      content: url('../img/Лого_html1.png');
+      margin-left: 22px;
+    }
+
     &__container {
       width: 1220px;
       margin: 0 auto;
@@ -353,6 +368,7 @@ $mobile: 767px;
       padding: 40px 0;
     }
   }
+
 // }
 
 // @media (max-width: $mobile) {
