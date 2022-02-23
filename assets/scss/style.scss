@@ -149,8 +149,15 @@ $mobile: 767px;
   }
 
   .index-cotalog {
-    &__item { 
-      padding: 55px 42px;
+    &__item1 { 
+      padding: 41px 52px 51px 55px;
+      height: auto;
+      background-color: $special-grey_2;
+      display: grid;
+    }
+
+    &__item2 {
+      padding: 47px 61px 55px 33px;
       height: auto;
       background-color: $special-grey_2;
       display: grid;
@@ -164,6 +171,7 @@ $mobile: 767px;
     }
 
     &__heading {
+      margin-bottom: 0%;
       font-weight: 300;
       font-size: 36px;
     }
@@ -171,6 +179,9 @@ $mobile: 767px;
     &__text {
       font-family: 'Arial', sans-serif;
       font-size: 16px;
+      margin-bottom: 23px;
+      margin-top: 0;
+      line-height: 24px;
     }
 
     &__link {
@@ -189,11 +200,13 @@ $mobile: 767px;
     }
 
     &__pic1 {
-      margin-right: 60px;
+      margin-right: 62px;
+      margin-bottom: 39px;
     }
 
     &__pic2 {
       margin-right: 47px;
+      margin-bottom: 39px;
     }
 
     &__arrow {
@@ -214,7 +227,10 @@ $mobile: 767px;
 
     &__text {
       font-family: 'Arial', sans-serif;
+      margin: 0;
+      margin-top: 31px;
       font-size: 16px;
+      line-height: 24px;
     }
 
     .item-row {
