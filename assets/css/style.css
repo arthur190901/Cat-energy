@@ -239,7 +239,7 @@
 }
 .item-list .item-row__item::after {
   content: url("../img/number1.png");
-  position: absolute;
+  position: relative;
 }
 
 .example {
@@ -256,6 +256,7 @@
 .example__text {
   font-family: "Arial", sans-serif;
   font-size: 16px;
+  line-height: 24px;
 }
 .example__small {
   font-family: "Arial", sans-serif;
@@ -328,6 +329,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .footer__item {
   list-style: none;
@@ -339,9 +343,16 @@
   text-decoration: none;
   color: #444;
 }
-.footer__link::after {
-  content: url("../img/Лого_html1.png");
+.footer__link-logo {
   margin-left: 22px;
+}
+.footer__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .footer__container {
   width: 1220px;

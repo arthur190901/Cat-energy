@@ -223,10 +223,6 @@ $mobile: 767px;
       margin-top: 68px;
     }
 
-    &__conatainer_a {
-
-    }
-
     &__text {
       font-family: 'Arial', sans-serif;
       margin: 0;
@@ -240,6 +236,8 @@ $mobile: 767px;
       padding: 0;
       display: flex;
       justify-content: space-between;
+      // background-image: url('../img/number1.png');
+      // background-repeat: no-repeat;
 
       &__item {
         width: 20%;
@@ -249,7 +247,7 @@ $mobile: 767px;
 
       &__item::after {
         content: url('../img/number1.png');
-        position: absolute;
+        position: relative;
         // z-index: 1;
       }
     }
@@ -270,6 +268,7 @@ $mobile: 767px;
     &__text {
       font-family: 'Arial', sans-serif;
       font-size: 16px;
+      line-height: 24px;
     }
 
     &__small {
@@ -340,6 +339,7 @@ $mobile: 767px;
 
     &__list {
       display: flex;
+      align-items: center;
     }
 
     &__item {
@@ -354,9 +354,13 @@ $mobile: 767px;
       color: $special-grey;
     }
 
-    &__link::after {
-      content: url('../img/Лого_html1.png');
+    &__link-logo {
       margin-left: 22px;
+    }
+
+    &__div {
+      display: flex;
+      align-items: center;
     }
 
     &__container {
