@@ -259,15 +259,54 @@
   margin-bottom: 146px;
 }
 .example__text {
+  margin: 0;
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
 .example__small {
   font-family: "Arial", sans-serif;
+  font-size: 14px;
+  background-color: #F2F2F2;
+}
+.example__common {
+  width: calc(50% - 21px);
+  text-align: center;
 }
 .example__br {
+  padding-top: 15px;
+  padding-bottom: 19px;
   font-size: 30px;
+  line-height: 36px;
+  position: relative;
+  font-family: "Oswald", "Arial", sans-serif;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+}
+.example__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 55px;
+}
+.example__state {
+  width: 365px;
+  margin-top: 69px;
+  text-align: center;
+}
+.example__num {
+  font-size: 20px;
+}
+.example__space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .example__taggle {
   width: 428px;

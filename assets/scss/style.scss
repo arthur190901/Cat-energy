@@ -269,6 +269,7 @@ $mobile: 767px;
     }
 
     &__text {
+      margin: 0;
       font-family: 'Arial', sans-serif;
       font-size: 16px;
       line-height: 24px;
@@ -276,10 +277,45 @@ $mobile: 767px;
 
     &__small {
       font-family: 'Arial', sans-serif;
+      font-size: 14px;
+      background-color: $special-grey_2;
+    }
+
+    &__common {
+      width: calc(50% - 21px);
+      text-align: center;
     }
 
     &__br {
+      padding-top: 15px;
+      padding-bottom: 19px;
       font-size: 30px;
+      line-height: 36px;
+      position: relative;
+      font-family: "Oswald","Arial",sans-serif;
+      border: 1px solid $special-grey_3;
+      border-radius: 3px;
+    }
+
+    &__flex {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 55px;
+    }
+
+    &__state {
+      width: 365px;
+      margin-top: 69px;
+      text-align: center;
+    }
+
+    &__num {
+      font-size: 20px;
+    }
+
+    &__space {
+      display: flex;
+      justify-content: space-between;
     }
     
     &__taggle {
