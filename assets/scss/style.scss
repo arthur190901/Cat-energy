@@ -255,15 +255,17 @@ $mobile: 767px;
 
   .example {
     background-color: $special-grey_2;
+    &__container {
+      width: 1220px;
+      margin: 0 auto;
+      padding-bottom: 75px;
+      display: flex;
+    }
+
     &__heading {
       font-size: 60px;
       font-weight: lighter;
       margin-bottom: 146px;
-    }
-
-    &__container {
-      width: 1220px;
-      margin: 0 auto;
     }
 
     &__text {
@@ -279,17 +281,7 @@ $mobile: 767px;
     &__br {
       font-size: 30px;
     }
-  }
-
-  .cat-advantage {
-    background-color: $special-grey_2;
-
-    &__container {
-      display: grid;
-      width: 1220px;
-      margin: 0 auto;
-    }
-
+    
     &__taggle {
       width: 428px;
       height: 6px;
@@ -297,7 +289,7 @@ $mobile: 767px;
       background-color: $special-grey_3;
       border: 0;
     }
-
+    
     &__button {
       padding: 0;
       font-family: inherit;
@@ -305,12 +297,27 @@ $mobile: 767px;
       border: none;
       text-transform: uppercase;
     }
-
+    
     &__conect {
       display: flex;
       align-items: center;
     }
+
+    &__div {
+      width: 436px;
+      margin: 0;
+    }
+
+    &__content {
+      width: 690px;
+    }
   }
+
+    // &__container {
+    //   display: grid;
+    //   width: 1220px;
+    //   margin: 0 auto;
+    // }
 
   .footer {
     background-color: $special-grey_2;
@@ -384,14 +391,6 @@ $mobile: 767px;
       align-items: center;
       padding: 40px 0;
     }
-  }
-
-  .section-container {
-    display: flex;
-    justify-content: space-between;
-    // width: 1220px;
-    // margin: 0 auto;
-    // max-width: 1220px;
   }
 
 // }
