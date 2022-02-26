@@ -264,15 +264,59 @@ $mobile: 767px;
       // background-repeat: no-repeat;
 
       &__item {
-        width: 20%;
-        list-style: none;
-        display: flex;
-      }
+        
 
-      &__item::after {
-        content: url('../img/number1.png');
-        position: relative;
-        // z-index: 1;
+        &--first {
+          position: relative;
+          width: 20%;
+          list-style: none;
+          display: flex;
+          &::after {
+            right: 0;
+            content: url('../img/number1.png');
+            position: absolute;
+            // z-index: 1; 
+          }
+        }
+
+        &--second {
+          position: relative;
+          width: 20%;
+          list-style: none;
+          display: flex;
+          &::after {
+            right: 0;
+            content: url('../img/number2.png');
+            position: absolute;
+            // z-index: 1; 
+          }
+        }
+
+        &--third {
+          position: relative;
+          width: 20%;
+          list-style: none;
+          display: flex;
+          &::after {
+            right: 0;
+            content: url('../img/number3.png');
+            position: absolute;
+            // z-index: 1; 
+          }
+        }
+
+        &--forth {
+          position: relative;
+          width: 20%;
+          list-style: none;
+          display: flex;
+          &::after {
+            right: 0;
+            content: url('../img/number4.png');
+            position: absolute;
+            // z-index: 1; 
+          }
+        }
       }
     }
   }

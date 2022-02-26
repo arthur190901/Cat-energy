@@ -248,16 +248,57 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.item-list .item-row__item {
+.item-list .item-row__item--first {
+  position: relative;
   width: 20%;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.item-list .item-row__item::after {
+.item-list .item-row__item--first::after {
+  right: 0;
   content: url("../img/number1.png");
+  position: absolute;
+}
+.item-list .item-row__item--second {
   position: relative;
+  width: 20%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.item-list .item-row__item--second::after {
+  right: 0;
+  content: url("../img/number2.png");
+  position: absolute;
+}
+.item-list .item-row__item--third {
+  position: relative;
+  width: 20%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.item-list .item-row__item--third::after {
+  right: 0;
+  content: url("../img/number3.png");
+  position: absolute;
+}
+.item-list .item-row__item--forth {
+  position: relative;
+  width: 20%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.item-list .item-row__item--forth::after {
+  right: 0;
+  content: url("../img/number4.png");
+  position: absolute;
 }
 
 .example {
