@@ -461,6 +461,45 @@ $mobile: 767px;
     }
   }
 
+  #vk {
+    color: $special-grey;
+    width: 28.89px;
+    height: 26px;
+  }
+  #vk:hover {
+    color: $green;
+  }
+  #vk:active {
+    color: $green;
+    opacity: 0.3;
+  }
+
+  #insta {
+    color: $special-grey;
+    width: 22.78px;
+    height: 22.78px;
+  }
+  #insta:hover {
+    color: $green;
+  }
+  #insta:active {
+    color: $green;
+    opacity: 0.3;
+  }
+
+  #facebook {
+    color: $special-grey;
+    width: 20px;
+    height: 26.97px;
+  }
+  #facebook:hover {
+    color: $green;
+  }
+  #facebook:active {
+    color: $green;
+    opacity: 0.3;
+  }
+
 // }
 
 // @media (max-width: $mobile) {
