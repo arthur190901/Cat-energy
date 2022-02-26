@@ -250,7 +250,7 @@
 }
 .item-list .item-row__item--first {
   position: relative;
-  width: 20%;
+  width: 230px;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -258,12 +258,13 @@
 }
 .item-list .item-row__item--first::after {
   right: 0;
-  content: url("../img/number1.png");
+  content: url("../img/number1.svg");
   position: absolute;
+  z-index: -1;
 }
 .item-list .item-row__item--second {
   position: relative;
-  width: 20%;
+  width: 246px;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -271,12 +272,13 @@
 }
 .item-list .item-row__item--second::after {
   right: 0;
-  content: url("../img/number2.png");
+  content: url("../img/number2.svg");
   position: absolute;
+  z-index: -1;
 }
 .item-list .item-row__item--third {
   position: relative;
-  width: 20%;
+  width: 248px;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -284,12 +286,13 @@
 }
 .item-list .item-row__item--third::after {
   right: 0;
-  content: url("../img/number3.png");
+  content: url("../img/number3.svg");
   position: absolute;
+  z-index: -1;
 }
 .item-list .item-row__item--forth {
   position: relative;
-  width: 20%;
+  width: 250px;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -297,8 +300,9 @@
 }
 .item-list .item-row__item--forth::after {
   right: 0;
-  content: url("../img/number4.png");
+  content: url("../img/number4.svg");
   position: absolute;
+  z-index: -1;
 }
 
 .example {
@@ -311,6 +315,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .example__heading {
   font-size: 60px;
@@ -389,6 +396,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 .example__div {
   width: 436px;
