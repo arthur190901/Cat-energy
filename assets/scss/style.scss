@@ -13,6 +13,7 @@ $black: #000;
 $special-grey: #444;
 $special-grey_2: #F2F2F2;
 $special-grey_3: #dcdcdc;
+$special-grey_4: #666;
 $green: #68B738;
 $special-green: #5eaa2f;
 
@@ -77,14 +78,14 @@ $mobile: 767px;
     &__a {
       text-decoration: none;
       color: $white;
-    }
-    &__a:hover {
+      &:hover {
       opacity: 0.6;
-    }
-    &__a:active {
+      }
+      &:active {
       opacity: 0.3;
+      }
     }
-
+    
     &__navigation {
       display: flex;
       flex-wrap: wrap;
@@ -96,12 +97,12 @@ $mobile: 767px;
       width: 202px;
       height: 59px;
       margin-top: 55px;
-    }
-    &__logo:hover {
+      &:hover {
       opacity: 0.8;
-    }
-    &__logo:active {
+      }
+      &:active {
       opacity: 0.6;
+      }
     }
 
     &__link {
@@ -146,12 +147,12 @@ $mobile: 767px;
         color: $white;
         background-color: $green;
         cursor: pointer;
-      }
-      &__button:hover {
+        &:hover {
         background-color: $special-green;
-      }
-      &__button:active {
+        }
+        &:active {
         opacity: 0.3;
+        }
       }
 
       &__pic {
@@ -239,8 +240,6 @@ $mobile: 767px;
   }
 
   .item-list {
-    // background-color: rgba($color: $white, $alpha: 0.7);
-
     &__heading {
       font-weight: lighter;
       font-size: 60px;
@@ -253,15 +252,12 @@ $mobile: 767px;
       margin-top: 31px;
       font-size: 16px;
       line-height: 24px;
-      // z-index: 2;
     }
 
     .item-row {
       padding: 0;
       display: flex;
       justify-content: space-between;
-      // background-image: url('../img/number1.png');
-      // background-repeat: no-repeat;
 
       &__item {
         &--first {
@@ -503,47 +499,74 @@ $mobile: 767px;
     &__logo:active {
       opacity: 0.6;
     }
+
+    &__social {
+      &--vk {
+        fill: $special-grey;
+        width: 28.89px;
+        height: 26px;
+      }
+      &--inst {
+        color: $special-grey;
+        width: 22.78px;
+        height: 22.78px;
+      }
+      &--fb {
+        color: $special-grey;
+        width: 20px;
+        height: 26.97px;
+      }
+  
+      &:hover {
+        fill: $special-green;
+      }
+      &:active {
+        fill: $special-green;
+        opacity: 0.3;
+      }
+    }
   }
 
   #vk {
-    color: $special-grey;
+    fill: $special-grey_4;
     width: 28.89px;
     height: 26px;
-  }
-  #vk:hover {
-    color: $green;
-  }
-  #vk:active {
-    color: $green;
-    opacity: 0.3;
+    &:hover {
+      fill: $special-green;
+    }
+    &:active {
+      fill: $special-green;
+      opacity: 0.3;
+    }
   }
 
-  #insta {
-    color: $special-grey;
+  #inst {
+    fill: $special-grey_4;
     width: 22.78px;
     height: 22.78px;
-  }
-  #insta:hover {
-    color: $green;
-  }
-  #insta:active {
-    color: $green;
-    opacity: 0.3;
+    &:hover {
+      fill: $special-green;
+    }
+    &:active {
+      fill: $special-green;
+      opacity: 0.3;
+    }
   }
 
-  #facebook {
-    color: $special-grey;
+  #fb {
+    stroke: $special-grey_4;
     width: 20px;
     height: 26.97px;
-  }
-  #facebook:hover {
-    color: $green;
-  }
-  #facebook:active {
-    color: $green;
-    opacity: 0.3;
+    &:hover {
+      stroke: #5eaa2f;
+    }
+    &:active {
+      stroke: $special-green;
+      opacity: 0.3;
+    }
   }
 
+  
 // }
 
 // @media (max-width: $mobile) {
