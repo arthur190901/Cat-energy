@@ -376,17 +376,52 @@ $mobile: 767px;
       font-size: 20px;
     }
 
+    &__num2 {
+      font-size: 20px;
+      position: relative;
+      right: 35px;
+    }
+
     &__space {
       display: flex;
       justify-content: space-between;
     }
     
     &__taggle {
+      -webkit-appearance: none;
       width: 428px;
       height: 6px;
       margin: 0 20px;
-      background-color: $special-grey_3;
       border: 0;
+      background-color: $special-grey_3;
+      // &::-webkit-slider-runnable-track {
+      //   height: 10px;
+      //   -webkit-appearance: none;
+      //   color: #13bba4;
+      //   margin-top: -1px;
+      // }
+      // &::-webkit-slider-thumb {
+      //   width: 10px;
+      //   -webkit-appearance: none;
+      //   height: 10px;
+      //   cursor: ew-resize;
+      //   background: #434343;
+      //   box-shadow: -80px 0 0 80px #43e5f7;
+      // }
+      // &::-moz-range-progress {
+      //   background-color: #43e5f7;
+      // }
+      // &::-moz-range-track {
+      //   background-color: #9a905d;
+      // }
+      
+      // &::-ms-fill-lower {
+      //   background-color: #43e5f7;
+      // }
+      
+      // &::-ms-fill-upper {
+      //   background-color: #9a905d;
+      // }
     }
     
     &__button {
@@ -396,6 +431,7 @@ $mobile: 767px;
       border: none;
       text-transform: uppercase;
       cursor: pointer;
+      background-color: $special-grey_2;
     }
     
     &__conect {
@@ -473,15 +509,32 @@ $mobile: 767px;
       font-size: 16px;
       text-decoration: none;
       color: $special-grey;
+      &:active {
+        opacity: 0.3;
+      }
     }
 
     &__link-logo {
       margin-left: 22px;
+      display: block;
+      &:hover {
+        background-image: url('../img/Лого_html-hover.svg');
+        background-repeat: no-repeat;
+        display: block;
+      }
+      &:active {
+        background-image: url('../img/Лого_html-hover.svg');
+        background-repeat: no-repeat;
+        display: block;
+        opacity: 0.3;
+      }
     }
 
     &__div {
+      fill: $special-grey_4;
       display: flex;
       align-items: center;
+      cursor: pointer;
     }
 
     &__container {
@@ -558,7 +611,7 @@ $mobile: 767px;
     width: 20px;
     height: 26.97px;
     &:hover {
-      stroke: #5eaa2f;
+      stroke: $special-green;
     }
     &:active {
       stroke: $special-green;
@@ -566,6 +619,11 @@ $mobile: 767px;
     }
   }
 
+  #logo {
+    &:hover {
+      opacity: 0;
+    }
+  }
   
 // }
 

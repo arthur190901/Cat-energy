@@ -366,6 +366,11 @@
 .example__num {
   font-size: 20px;
 }
+.example__num2 {
+  font-size: 20px;
+  position: relative;
+  right: 35px;
+}
 .example__space {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -375,11 +380,12 @@
           justify-content: space-between;
 }
 .example__taggle {
+  -webkit-appearance: none;
   width: 428px;
   height: 6px;
   margin: 0 20px;
-  background-color: #dcdcdc;
   border: 0;
+  background-color: #dcdcdc;
 }
 .example__button {
   padding: 0;
@@ -388,6 +394,7 @@
   border: none;
   text-transform: uppercase;
   cursor: pointer;
+  background-color: #F2F2F2;
 }
 .example__conect {
   display: -webkit-box;
@@ -469,16 +476,33 @@
   text-decoration: none;
   color: #444;
 }
+.footer__link:active {
+  opacity: 0.3;
+}
 .footer__link-logo {
   margin-left: 22px;
+  display: block;
+}
+.footer__link-logo:hover {
+  background-image: url("../img/Лого_html-hover.svg");
+  background-repeat: no-repeat;
+  display: block;
+}
+.footer__link-logo:active {
+  background-image: url("../img/Лого_html-hover.svg");
+  background-repeat: no-repeat;
+  display: block;
+  opacity: 0.3;
 }
 .footer__div {
+  fill: #666;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 .footer__container {
   width: 1220px;
@@ -560,4 +584,8 @@
 #fb:active {
   stroke: #5eaa2f;
   opacity: 0.3;
+}
+
+#logo:hover {
+  opacity: 0;
 }
