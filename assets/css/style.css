@@ -142,17 +142,13 @@
 .main .programm__button:hover {
   background-color: #5eaa2f;
 }
-.main .programm__button:active {
-  background-color: #5eaa2f;
-  opacity: 0.3;
-}
 .main .programm__pic {
   top: 30px;
   bottom: auto;
   width: 552px;
   height: 499px;
   margin-left: 408px;
-  margin-top: -370px;
+  margin-top: -360px;
   z-index: 0;
 }
 

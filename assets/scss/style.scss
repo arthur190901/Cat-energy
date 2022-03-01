@@ -111,6 +111,10 @@ $mobile: 767px;
       list-style: none;
     }
 
+    &__underline {
+      
+    }
+
     &__button {
       display: none;
     }
@@ -150,10 +154,6 @@ $mobile: 767px;
         &:hover {
         background-color: $special-green;
         }
-        &:active {
-          background-color: $special-green;
-          opacity: 0.3;
-        }
       }
 
       &__pic {
@@ -162,7 +162,7 @@ $mobile: 767px;
         width: 552px;
         height: 499px;
         margin-left: 408px;
-        margin-top: -370px;
+        margin-top: -360px;
         z-index: 0;
       }
     }
