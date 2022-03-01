@@ -42,19 +42,32 @@ $mobile: 767px;
 // @media (min-width: $desktop) {
   .body {
     font-family: 'Oswald', sans-serif;
-    // width: 1220px;
     margin: 0;
     padding: 0;
     min-height: 100%;
     min-width: 1220px;
-    background-image: url('../img/index-background-desktop.png');
-    background-repeat: no-repeat;
-    background-position: 100% 0;
   }
 
   .main-header {
     width: 100%;
     font-family: 'Oswald', sans-serif;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: calc(100%/2 - 40px);
+      height: 658px;
+      background-color: $special-green;
+      background-image: url('../img/index-background-desktop.png');
+      background-size: 680px auto;
+      background-repeat: no-repeat;
+      background-position: right top;
+      z-index: -1;
+    }
 
     &__wrapper {
       width: 1220px;
@@ -111,21 +124,16 @@ $mobile: 767px;
       list-style: none;
     }
 
-    &__underline {
-      
-    }
-
     &__button {
       display: none;
     }
   }
 
-
   .main {
     .programm {
       display: grid;
       margin-left: 80px;
-      margin-bottom: 146px;
+      margin-bottom: 100px;
 
       &__text {
         font-size: 60px;
@@ -229,15 +237,13 @@ $mobile: 767px;
       margin-bottom: 39px;
     }
 
+    &__long {
+      cursor: pointer;
+    }
+
     &__arrow {
       margin-left: 26px;
     }
-    // &__arrow:hover {
-
-    // }
-    // &__arrow:active {
-    //   opacity: 0.3;
-    // }
   }
 
   .item-list {
