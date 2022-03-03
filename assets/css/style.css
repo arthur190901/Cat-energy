@@ -27,6 +27,10 @@
 }
 
 @media (min-width: 1440px) {
+  .horizontal-line {
+    display: none;
+  }
+
   .body {
     font-family: "Oswald", sans-serif;
     margin: 0;
@@ -161,7 +165,7 @@
     width: 552px;
     height: 499px;
     margin-left: 408px;
-    margin-top: -360px;
+    margin-top: -320px;
     z-index: 0;
   }
 
@@ -815,5 +819,88 @@
     margin-top: 31px;
     font-size: 16px;
     line-height: 24px;
+  }
+  .main .item-row {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 629px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main .item-row__item--first {
+    position: relative;
+    width: 230px;
+    list-style: none;
+    margin-bottom: 135px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main .item-row__item--first::after {
+    right: 0;
+    content: url("../img/number1.svg");
+    position: absolute;
+    z-index: -1;
+  }
+  .main .item-row__item--second {
+    position: relative;
+    width: 246px;
+    list-style: none;
+    margin-bottom: 135px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main .item-row__item--second::after {
+    right: 0;
+    content: url("../img/number2.svg");
+    position: absolute;
+    z-index: -1;
+  }
+  .main .item-row__item--third {
+    position: relative;
+    width: 248px;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main .item-row__item--third::after {
+    right: 0;
+    content: url("../img/number3.svg");
+    position: absolute;
+    z-index: -1;
+  }
+  .main .item-row__item--forth {
+    position: relative;
+    width: 250px;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main .item-row__item--forth::after {
+    right: 0;
+    content: url("../img/number4.svg");
+    position: absolute;
+    z-index: -1;
+  }
+  .main .example {
+    background-color: #F2F2F2;
+  }
+  .main .example__container {
+    width: 708px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
