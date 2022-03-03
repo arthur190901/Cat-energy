@@ -760,6 +760,7 @@
     display: grid;
   }
   .main .index-cotalog__bar {
+    margin: 0;
     padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -771,6 +772,7 @@
             justify-content: space-between;
   }
   .main .index-cotalog__heading {
+    margin-top: 0;
     margin-bottom: 24px;
     font-weight: 300;
     font-size: 36px;
@@ -787,18 +789,31 @@
     font-size: 20px;
     color: #000;
   }
+  .main .index-cotalog__container_first::after {
+    background-image: url("../img/cat_front.svg");
+  }
   .main .index-cotalog__pic1 {
-    width: 200px;
-    height: 211px;
+    display: none;
   }
   .main .index-cotalog__pic2 {
-    width: 268px;
-    height: 200px;
+    display: none;
   }
   .main .index-cotalog__long {
     cursor: pointer;
   }
   .main .index-cotalog__arrow {
     margin-left: 25px;
+  }
+  .main .item-list__heading {
+    font-weight: lighter;
+    font-size: 60px;
+    margin-top: 45px;
+  }
+  .main .item-list__text {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    margin-top: 31px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
