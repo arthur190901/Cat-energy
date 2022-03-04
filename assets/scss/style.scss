@@ -464,7 +464,9 @@ $mobile: 767px;
 
   .footer {
     background-color: $special-grey_2;
+
     &__section {
+      display: none;
       height: 84px;
       display: flex;
       position: relative;
@@ -783,10 +785,10 @@ $mobile: 767px;
       }
 
       &__pic {
-        width: 100%;
+        width: 708px;
         height: 609px;
         position: absolute;
-        left: 50px;
+        left: 270px;
         top: 340px;
         z-index: -1;
       }
@@ -1005,26 +1007,27 @@ $mobile: 767px;
         margin-bottom: 55px;
       }
   
-      // &__state {
-      //   width: 365px;
-      //   margin-top: 69px;
-      //   text-align: center;
-      // }
+      &__state {
+        display: flex;
+        justify-content: space-between;
+      }
   
-      // &__num {
-      //   font-size: 20px;
-      // }
+      &__num {
+        font-size: 20px;
+      }
   
-      // &__num2 {
-      //   font-size: 20px;
-      //   position: relative;
-      //   right: 35px;
-      // }
+      &__num2 {
+        font-size: 20px;
+        margin-top: 9px;
+      }
   
-      // &__space {
-      //   display: flex;
-      //   justify-content: space-between;
-      // }
+      &__space {
+        display: flex;
+        flex-wrap: wrap;
+        width: 224px;
+        height: 70px;
+        justify-content: end;
+      }
       
       &__taggle {
         -webkit-appearance: none;
@@ -1176,12 +1179,12 @@ $mobile: 767px;
     }
 
     &__container {
-      width: 1220px;
+      width: 708px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 40px 0;
+      // padding: 40px 0;
     }
 
     &__logo:hover {
