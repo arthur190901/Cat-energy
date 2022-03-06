@@ -822,17 +822,6 @@
     font-size: 20px;
     color: #000;
   }
-  .main .index-cotalog__container::after {
-    content: "";
-    background-image: url("../img/cat_back_tablet.svg");
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 211px;
-    position: absolute;
-    display: block;
-    right: 0;
-    top: 0;
-  }
   .main .index-cotalog__pic1 {
     display: none;
   }
@@ -1160,5 +1149,67 @@
   .footer__social:active {
     fill: #5eaa2f;
     opacity: 0.3;
+  }
+}
+@media all and (max-width: 767px) {
+  .container {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .body {
+    background-color: #fff;
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    min-width: 320px;
+  }
+
+  .main-header {
+    width: 100%;
+    font-family: "Oswald", sans-serif;
+  }
+
+  .main {
+    background-image: url("../img/index-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-color: #fff;
+    position: relative;
+    background-position: top;
+    z-index: 1;
+  }
+  .main .programm {
+    display: -ms-grid;
+    display: grid;
+    margin-left: 80px;
+    margin-bottom: 100px;
+  }
+  .main .programm::before {
+    content: "";
+    position: relative;
+    background-color: #5eaa2f;
+    height: 305px;
+    background-position: top;
+    z-index: -1;
+  }
+  .main .programm__text {
+    font-size: 36px;
+    line-height: 36px;
+    width: 249px;
+    margin-bottom: 25px;
+    margin-top: 27px;
+    padding: 0;
+    color: #fff;
+  }
+  .main .programm__text2 {
+    font-size: 14px;
+    line-height: 14px;
+    color: #fff;
+  }
+  .main .programm__pic {
+    width: 280px;
+    height: 270px;
+    z-index: 0;
   }
 }
