@@ -1205,11 +1205,13 @@
     padding-top: 11px;
   }
   .main-header__button {
+    background-image: url("../img/button_mobile.svg");
     display: block;
     background-color: #fff;
     border: none;
     width: 24px;
     height: 16px;
+    cursor: pointer;
   }
   .main-header__wrapper {
     padding-left: 20px;
@@ -1217,8 +1219,13 @@
     margin: 0 auto;
   }
   .main-header__list {
-    display: -ms-grid;
-    display: grid;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   }
   .main-header__link {
     display: block;
@@ -1245,6 +1252,10 @@
   }
   .main-header__a:active {
     opacity: 0.3;
+  }
+  .main-header__navigation {
+    position: relative;
+    display: inline-block;
   }
 
   .main .programm {
@@ -1646,5 +1657,9 @@
   .footer__social:active {
     fill: #5eaa2f;
     opacity: 0.3;
+  }
+
+  .show {
+    display: block;
   }
 }

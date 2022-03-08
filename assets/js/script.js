@@ -1,7 +1,14 @@
-const burger = document.querySelector('.main-header__button');
-const show = document.querySelector('.main-header__list');
+const btn = document.getElementById('button');
+const burgerMenu = document.getElementById('myDropdown');
+const closeMenu = document.getElementById('close');
 
-burger.addEventListener('click', function(evt){
+btn.addEventListener('click', function(evt){
   evt.preventDefault;
-})
+  myDropdown.classList('show');
+});
+
+// close.addEventListener('click', function(evt){
+//   evt.preventDefault;
+//   myDropdown.remove('show');
+// });
 

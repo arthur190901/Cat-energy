@@ -1314,11 +1314,13 @@ $mobile: 767px;
     padding-top: 11px;
 
     &__button {
+      background-image: url('../img/button_mobile.svg');
       display: block;
       background-color: $white;
       border: none;
       width: 24px;
       height: 16px;
+      cursor: pointer;
     }
 
     &__wrapper {
@@ -1328,8 +1330,12 @@ $mobile: 767px;
     }
 
     &__list {
-      display: grid;
-      ;
+      display: none;
+      position: absolute;
+      z-index: 1;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     }
 
     &__link {
@@ -1356,12 +1362,10 @@ $mobile: 767px;
       }
     }
 
-  //   &__navigation {
-  //     display: flex;
-  //     flex-wrap: wrap;
-  //     justify-content: space-between;
-  //     align-items: center;
-  //   }
+    &__navigation {
+      position: relative;
+      display: inline-block;
+    }
 
   //   &__logo {
   //     width: 174px;
@@ -1847,6 +1851,9 @@ $mobile: 767px;
         opacity: 0.3;
       }
     }
+  }
+  .show {
+    display: block;
   }
 }
 
