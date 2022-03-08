@@ -1206,6 +1206,10 @@
   }
   .main-header__button {
     display: block;
+    background-color: #fff;
+    border: none;
+    width: 24px;
+    height: 16px;
   }
   .main-header__wrapper {
     padding-left: 20px;
@@ -1213,7 +1217,11 @@
     margin: 0 auto;
   }
   .main-header__list {
-    display: none;
+    display: -ms-grid;
+    display: grid;
+  }
+  .main-header__link {
+    display: block;
   }
   .main-header__wrapper {
     display: -webkit-box;
@@ -1224,6 +1232,19 @@
             justify-content: space-between;
     max-width: 100%;
     margin: 0 auto;
+  }
+  .main-header__a {
+    text-decoration: none;
+    padding: 23px 20px;
+    -webkit-box-shadow: inset 0 1px 0 #e6e6e6;
+            box-shadow: inset 0 1px 0 #e6e6e6;
+    color: #000;
+  }
+  .main-header__a:hover {
+    opacity: 0.6;
+  }
+  .main-header__a:active {
+    opacity: 0.3;
   }
 
   .main .programm {

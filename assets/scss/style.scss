@@ -1315,6 +1315,10 @@ $mobile: 767px;
 
     &__button {
       display: block;
+      background-color: $white;
+      border: none;
+      width: 24px;
+      height: 16px;
     }
 
     &__wrapper {
@@ -1324,7 +1328,12 @@ $mobile: 767px;
     }
 
     &__list {
-      display: none;
+      display: grid;
+      ;
+    }
+
+    &__link {
+      display: block;
     }
 
     &__wrapper {
@@ -1334,20 +1343,18 @@ $mobile: 767px;
       margin: 0 auto;
     }
 
-  //   &__a {
-  //     text-decoration: none;
-  //     color: $black;
-  //     &:hover {
-  //     opacity: 0.6;
-  //     }
-  //     &:active {
-  //     opacity: 0.3;
-  //     }
-  //     &--line {
-  //       color: $black;
-  //       border-bottom: 2px solid $green;
-  //     }
-  //   }
+    &__a {
+      text-decoration: none;
+      padding: 23px 20px;
+      box-shadow: inset 0 1px 0 #e6e6e6;
+      color: $black;
+      &:hover {
+      opacity: 0.6;
+      }
+      &:active {
+      opacity: 0.3;
+      }
+    }
 
   //   &__navigation {
   //     display: flex;
