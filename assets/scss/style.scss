@@ -1344,13 +1344,21 @@ $mobile: 767px;
     }
 
     &__button {
-      background-image: url('../img/button_mobile.svg');
-      display: block;
-      background-color: $white;
-      border: none;
-      width: 24px;
-      height: 16px;
-      cursor: pointer;
+      // display: block;
+      // background-image: url('../img/button_mobile.svg');
+      // background-repeat: no-repeat;
+      // background-color: $white;
+      // border: none;
+      // width: 24px;
+      // height: 18px;
+      // cursor: pointer;
+      // text-align: center;
+      // align-items: center;
+      // &:focus {
+      //   background-image: url('../img/close_black_36dp.svg');
+      //   background-position: center;
+      //   background-repeat: no-repeat;
+      // }
     }
 
     &__wrapper {

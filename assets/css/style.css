@@ -1229,15 +1229,6 @@
   .main-header__img1, .main-header__img2 {
     display: none;
   }
-  .main-header__button {
-    background-image: url("../img/button_mobile.svg");
-    display: block;
-    background-color: #fff;
-    border: none;
-    width: 24px;
-    height: 16px;
-    cursor: pointer;
-  }
   .main-header__wrapper {
     padding-left: 20px;
     padding-right: 20px;
