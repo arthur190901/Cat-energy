@@ -1,6 +1,6 @@
 {
 const btn = document.getElementById('button');
-const burgerMenu = document.querySelector('.main-header__list');
+const burgerMenu = document.querySelector('.sections');
 const closeMenu = document.getElementById('close');
 
 btn.addEventListener('click', function(evt){
