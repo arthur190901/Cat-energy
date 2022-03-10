@@ -167,6 +167,7 @@ $mobile: 767px;
       &--line {
         color: $white;
         border-bottom: 2px solid $white;
+        padding-bottom: 8px;
       }
     }
     
@@ -770,6 +771,7 @@ $mobile: 767px;
       &--line {
         color: $black;
         border-bottom: 2px solid $green;
+        padding-bottom: 8px;
       }
     }
 
@@ -1470,11 +1472,10 @@ $mobile: 767px;
       background-color: $special-green;
       background-repeat: no-repeat;
       background-position: top;
-      display: grid;
-      grid-template-columns: auto;
+      display: flex;
+      flex-direction: column;
 
       &__text {
-        order: 1;
         color: $white;
         font-size: 36px;
         margin: 0;
@@ -1485,7 +1486,6 @@ $mobile: 767px;
       }
 
       &__text2 {
-        order: 2;
         color: $white;
         margin: 2;
         font-size: 14px;
@@ -1493,8 +1493,8 @@ $mobile: 767px;
       }
 
       &__button {
-        order: 4;
-        // padding: 14px 26px;
+        display: grid;
+        padding: 11px 0;
         line-height: 18px;
         text-decoration: none;
         text-align: center;
@@ -1513,7 +1513,6 @@ $mobile: 767px;
       }
 
       &__pic {
-        order: 3;
         width: 280px;
         height: 270px;
         // position: relative;
@@ -1557,8 +1556,10 @@ $mobile: 767px;
       &__text {
         font-family: 'Arial', sans-serif;
         font-size: 14px;
-        margin: 22px 0;
+        margin: 0;
         line-height: 18px;
+        padding: 22px 0;
+        border-bottom: 1px solid $special-grey_5;
       }
   
       &__link {
@@ -1587,6 +1588,7 @@ $mobile: 767px;
       }
   
       &__long {
+        padding-top: 15px;
         cursor: pointer;
       }
   

@@ -153,6 +153,7 @@
   .main-header__a--line {
     color: #fff;
     border-bottom: 2px solid #fff;
+    padding-bottom: 8px;
   }
   .main-header__navigation {
     display: -webkit-box;
@@ -738,6 +739,7 @@
   .main-header__a--line {
     color: #000;
     border-bottom: 2px solid #68B738;
+    padding-bottom: 8px;
   }
   .main-header__navigation {
     display: -webkit-box;
@@ -1344,15 +1346,15 @@
     background-color: #5eaa2f;
     background-repeat: no-repeat;
     background-position: top;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto;
-    grid-template-columns: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .main .programm__text {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
     color: #fff;
     font-size: 36px;
     margin: 0;
@@ -1361,18 +1363,15 @@
     padding-bottom: 25px;
   }
   .main .programm__text2 {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
     color: #fff;
     margin: 2;
     font-size: 14px;
     line-height: 14px;
   }
   .main .programm__button {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
+    display: -ms-grid;
+    display: grid;
+    padding: 11px 0;
     line-height: 18px;
     text-decoration: none;
     text-align: center;
@@ -1388,9 +1387,6 @@
     background-color: #5eaa2f;
   }
   .main .programm__pic {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
     width: 280px;
     height: 270px;
   }
@@ -1431,8 +1427,10 @@
   .main .index-cotalog__text {
     font-family: "Arial", sans-serif;
     font-size: 14px;
-    margin: 22px 0;
+    margin: 0;
     line-height: 18px;
+    padding: 22px 0;
+    border-bottom: 1px solid #d9d9d9;
   }
   .main .index-cotalog__link {
     text-decoration: none;
@@ -1457,6 +1455,7 @@
     margin-right: 11px;
   }
   .main .index-cotalog__long {
+    padding-top: 15px;
     cursor: pointer;
   }
   .main .index-cotalog__arrow {
