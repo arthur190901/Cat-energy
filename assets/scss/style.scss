@@ -14,6 +14,7 @@ $special-grey: #444;
 $special-grey_2: #F2F2F2;
 $special-grey_3: #dcdcdc;
 $special-grey_4: #666;
+$special-grey_5: #d9d9d9;
 $green: #68B738;
 $special-green: #5eaa2f;
 
@@ -33,6 +34,52 @@ $mobile: 767px;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+#vk {
+  fill: $special-grey_4;
+  width: 28.89px;
+  height: 26px;
+  &:hover {
+    fill: $special-green;
+  }
+  &:active {
+    fill: $special-green;
+    opacity: 0.3;
+  }
+}
+
+#inst {
+  fill: $special-grey_4;
+  width: 22.78px;
+  height: 22.78px;
+  &:hover {
+    fill: $special-green;
+  }
+  &:active {
+    fill: $special-green;
+    opacity: 0.3;
+  }
+}
+
+#fb {
+  stroke: $special-grey_4;
+  width: 20px;
+  height: 26.97px;
+  &:hover {
+    stroke: $special-green;
+  }
+  &:active {
+    stroke: $special-green;
+    opacity: 0.3;
+  }
+}
+
+#logo {
+  &:hover {
+    opacity: 0;
+  }
+}
+
 
 @media (min-width: $desktop) {
   .hr1 {
@@ -619,51 +666,6 @@ $mobile: 767px;
     }
   }
 
-  #vk {
-    fill: $special-grey_4;
-    width: 28.89px;
-    height: 26px;
-    &:hover {
-      fill: $special-green;
-    }
-    &:active {
-      fill: $special-green;
-      opacity: 0.3;
-    }
-  }
-
-  #inst {
-    fill: $special-grey_4;
-    width: 22.78px;
-    height: 22.78px;
-    &:hover {
-      fill: $special-green;
-    }
-    &:active {
-      fill: $special-green;
-      opacity: 0.3;
-    }
-  }
-
-  #fb {
-    stroke: $special-grey_4;
-    width: 20px;
-    height: 26.97px;
-    &:hover {
-      stroke: $special-green;
-    }
-    &:active {
-      stroke: $special-green;
-      opacity: 0.3;
-    }
-  }
-
-  #logo {
-    &:hover {
-      opacity: 0;
-    }
-  }
-
   .heading {
     font-size: 60px;
     font-weight: lighter;
@@ -679,8 +681,6 @@ $mobile: 767px;
     align-items: center;
   }
 }
-
-
 
 
 
@@ -1344,21 +1344,21 @@ $mobile: 767px;
     }
 
     &__button {
-      // display: block;
-      // background-image: url('../img/button_mobile.svg');
-      // background-repeat: no-repeat;
-      // background-color: $white;
-      // border: none;
-      // width: 24px;
-      // height: 18px;
-      // cursor: pointer;
-      // text-align: center;
-      // align-items: center;
-      // &:focus {
-      //   background-image: url('../img/close_black_36dp.svg');
-      //   background-position: center;
-      //   background-repeat: no-repeat;
-      // }
+      display: block;
+      background-image: url('../img/button_mobile.svg');
+      background-repeat: no-repeat;
+      background-color: $white;
+      border: none;
+      width: 24px;
+      height: 18px;
+      cursor: pointer;
+      text-align: center;
+      align-items: center;
+      &:focus {
+        background-image: url('../img/close_black_36dp.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+      }
     }
 
     &__wrapper {
@@ -1846,6 +1846,11 @@ $mobile: 767px;
     &__list {
       display: flex;
       align-items: center;
+      margin: 0;
+      padding: 20px 0;
+      justify-content: center;
+      border-top: 1px solid $special-grey_5;
+      border-bottom: 1px solid $special-grey_5;
     }
 
     &__item {
@@ -1882,6 +1887,7 @@ $mobile: 767px;
     }
 
     &__div {
+      padding: 22px 0;
       fill: $special-grey_4;
       display: flex;
       justify-content: space-between;
@@ -1892,18 +1898,25 @@ $mobile: 767px;
     &__container {
       padding-left: 20px;
       padding-right: 20px;
-      margin: 0 auto;
+      text-align: center;
+      // margin: 0 auto;
       // display: flex;
       // justify-content: space-between;
       align-items: center;
     }
 
-    &__logo:hover {
-      opacity: 0.8;
+    &__logo {
+      padding-bottom: 29px;
+      padding-top: 39px;
+      &:hover {
+        opacity: 0.8;
+      }
+      &:active {
+        opacity: 0.6;
+      }
     }
-    &__logo:active {
-      opacity: 0.6;
-    }
+
+    
 
     &__social {
       &--vk {
