@@ -1,11 +1,11 @@
 {
 const btn = document.getElementById('button');
 const burgerMenu = document.querySelector('.sections');
-const closeMenu = document.getElementById('close');
+const close = document.querySelector('.close');
 
 btn.addEventListener('click', function(evt){
   evt.preventDefault;
-  burgerMenu.classList.add('show');
+  burgerMenu.classList.toggle('show');
 });
 
 // close.addEventListener('click', function(evt){

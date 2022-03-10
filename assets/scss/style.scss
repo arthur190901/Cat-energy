@@ -1356,11 +1356,17 @@ $mobile: 767px;
       cursor: pointer;
       text-align: center;
       align-items: center;
-      &:focus {
-        background-image: url('../img/close_black_36dp.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-      }
+      transition: 0.3s;
+      // &:focus {
+      //   background-image: url('../img/close_black_36dp.svg');
+      //   background-position: center;
+      //   background-repeat: no-repeat;
+      // }
+    }
+
+    .close {
+      background-image: url('../img/close_black_36dp.svg');
+      background-repeat: no-repeat;
     }
 
     &__wrapper {
@@ -1949,6 +1955,12 @@ $mobile: 767px;
   .sections {
     display: none;
   }
+  
+  .buuton__active {
+    background-image: url('../img/close_black_36dp.svg');
+    background-size: contain;
+  }
+
   .show {
     display: block;
   }

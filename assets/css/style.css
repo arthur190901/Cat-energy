@@ -1244,10 +1244,11 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
-  .main-header__button:focus {
+  .main-header .close {
     background-image: url("../img/close_black_36dp.svg");
-    background-position: center;
     background-repeat: no-repeat;
   }
   .main-header__wrapper {
@@ -1761,6 +1762,11 @@
 
   .sections {
     display: none;
+  }
+
+  .buuton__active {
+    background-image: url("../img/close_black_36dp.svg");
+    background-size: contain;
   }
 
   .show {
