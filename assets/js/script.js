@@ -1,7 +1,9 @@
 {
   const btn = document.getElementById('button');
   const burgerMenu = document.querySelector('.sections');
-  const closeMenu = document.querySelector('.close');
+  const btnBefore = document.getElementById('before');
+  const btnAfter = document.getElementById('after');
+  const image = document.getElementById('image');
 
   btn.addEventListener('click', function(evt){
     evt.preventDefault;
@@ -9,13 +11,9 @@
     burgerMenu.classList.toggle('show');
   });
 
-  
-  // if (burgerMenu.classList.toggle('show')) {
-
-  // }
-
-  // close.addEventListener('click', function(evt){
-  //   evt.preventDefault;
-  //   burgerMenu.remove('show');
+  // btnBefore.addEventListener('click', function(event) {
+  //   event.preventDefault;
+  //   image.classList.add('cat-before');
+  //   image.classList.add('none');
   // });
 }
