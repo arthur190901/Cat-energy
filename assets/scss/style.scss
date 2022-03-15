@@ -1345,6 +1345,10 @@ $mobile: 719px;
 
 
 
+  .desktop-img {
+    position: relative;
+    bottom: 85px;
+  }
 
   .mobile-img {
     display: none;
@@ -1364,13 +1368,14 @@ $mobile: 719px;
   }
   .product-catalog {
     &__conection {
-      padding: 0 36px;
+      // padding: 0 36px;
+      text-align: center;
     }
 
     &__heading {
       margin-top: 0;
       padding-top: 58px;
-      margin-bottom: 83px;
+      margin-bottom: 164px;
       font-size: 60px;
       line-height: 60px;
       font-weight: lighter;
@@ -1385,13 +1390,33 @@ $mobile: 719px;
     }
 
     &__item {
-      width: 324px;
-      height: 430px;
+      padding: 0 36px 40px;  
+      display: flex;
+      flex-direction: column;
       background-color: $special-grey_2;
       list-style: none;
+      margin-bottom: 140px;
+      &--white {
+        padding: 0 36px 40px;
+        display: flex;
+        flex-direction: column;
+        background-color: $white;
+        list-style: none;
+        border: 2px solid $special-grey_2;
+      }
+    }
+
+    &__unit {
+      margin-bottom: 33px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
 
     &__description {
+      width: auto;
+      padding-bottom: 21px;
+      text-align: center;
       margin: 0;
       font-size: 20px;
       line-height: 24px;
@@ -1405,18 +1430,51 @@ $mobile: 719px;
       line-height: 16px;
     }
 
+    &__end {
+      text-align: end
+    }
+
+    &__start {
+      text-align: start;
+    }
+
     &__order {
+      width: 248px;
       color: $white;
       background-color: $green;
       text-decoration: none;
+      text-align: center;
       text-transform: uppercase;
       padding: 7px 0 8px;
+      &:hover {
+        background-color: $special-green;
+      }
+    }
+
+    &__another {
+      font-size: 20px;
+      line-height: 22px;
+      margin: 0;
+    }
+
+    &__small {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 18px;
     }
 
     &__link {
+      width: 248px;
       color: $black;
       background-color: $special-grey_2;
       text-decoration: none;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 7px 0 8px;
+      &:hover {
+        background-color: $special-grey_6;
+      }
     }
   }
 
@@ -1424,6 +1482,8 @@ $mobile: 719px;
     &__photo {
       display: none;
     }
+
+    
   }
 }
 
