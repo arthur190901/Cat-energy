@@ -1202,6 +1202,81 @@
     fill: #5eaa2f;
     opacity: 0.3;
   }
+
+  .mobile-img {
+    display: none;
+  }
+
+  .container2 {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .catalog-body {
+    margin: 0;
+  }
+
+  .main-catalog {
+    font-family: "Oswald", sans-serif;
+  }
+
+  .product-catalog__conection {
+    padding: 0 36px;
+  }
+  .product-catalog__heading {
+    margin-top: 0;
+    padding-top: 58px;
+    margin-bottom: 83px;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: lighter;
+  }
+  .product-catalog__list {
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .product-catalog__item {
+    width: 324px;
+    height: 430px;
+    background-color: #F2F2F2;
+    list-style: none;
+  }
+  .product-catalog__description {
+    margin: 0;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: lighter;
+  }
+  .product-catalog__line {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .product-catalog__order {
+    color: #fff;
+    background-color: #68B738;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 7px 0 8px;
+  }
+  .product-catalog__link {
+    color: #000;
+    background-color: #F2F2F2;
+    text-decoration: none;
+  }
+
+  .additional__photo {
+    display: none;
+  }
 }
 @media all and (max-width: 719px) {
   .body {
@@ -1794,6 +1869,10 @@
     height: 29px;
   }
 
+  .desktop-img {
+    display: none;
+  }
+
   .catalog-body {
     font-family: "Oswald", sans-serif;
     margin: 0;
@@ -1817,6 +1896,7 @@
     font-size: 36px;
     line-height: 36px;
     margin: 0;
+    text-transform: none;
   }
   .main-catalog .product-catalog__list {
     padding: 0;
@@ -1910,6 +1990,9 @@
   }
   .main-catalog .product-catalog__link:hover {
     background-color: #ebebeb;
+  }
+  .main-catalog .additional__desktop {
+    display: none;
   }
   .main-catalog .additional__heading {
     font-size: 24px;

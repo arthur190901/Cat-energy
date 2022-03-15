@@ -1332,7 +1332,101 @@ $mobile: 719px;
       }
     }
   }
+
+
+
+
+
+
+
+  //catalog-tablet
+
+
+
+
+
+
+  .mobile-img {
+    display: none;
+  }
+
+  .container2 {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .catalog-body {
+    margin: 0;
+  }
+
+  .main-catalog {
+    font-family: 'Oswald', sans-serif;
+  }
+  .product-catalog {
+    &__conection {
+      padding: 0 36px;
+    }
+
+    &__heading {
+      margin-top: 0;
+      padding-top: 58px;
+      margin-bottom: 83px;
+      font-size: 60px;
+      line-height: 60px;
+      font-weight: lighter;
+    }
+
+    &__list {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__item {
+      width: 324px;
+      height: 430px;
+      background-color: $special-grey_2;
+      list-style: none;
+    }
+
+    &__description {
+      margin: 0;
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: lighter;
+    }
+
+    &__line {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 16px;
+    }
+
+    &__order {
+      color: $white;
+      background-color: $green;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 7px 0 8px;
+    }
+
+    &__link {
+      color: $black;
+      background-color: $special-grey_2;
+      text-decoration: none;
+    }
+  }
+
+  .additional {
+    &__photo {
+      display: none;
+    }
+  }
 }
+
 
 
 
@@ -2031,6 +2125,13 @@ $mobile: 719px;
 
 
   
+
+
+
+  .desktop-img {
+    display: none;
+  }
+
   .catalog-body {
     font-family: 'Oswald', sans-serif;
     margin: 0;
@@ -2056,6 +2157,7 @@ $mobile: 719px;
         font-size: 36px;
         line-height: 36px;
         margin: 0;
+        text-transform: none;
       }
 
       &__list {
@@ -2152,6 +2254,10 @@ $mobile: 719px;
     }
 
     .additional {
+      &__desktop {
+        display: none;
+      }
+
       &__heading {
         font-size: 24px;
         line-height: 24px;
