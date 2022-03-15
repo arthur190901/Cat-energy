@@ -1226,6 +1226,7 @@
   }
 
   .product-catalog__conection {
+    height: 350px;
     text-align: center;
   }
   .product-catalog__heading {
@@ -1262,7 +1263,10 @@
     margin-bottom: 140px;
   }
   .product-catalog__item--white {
-    padding: 0 36px 40px;
+    width: 244px;
+    height: 334px;
+    padding: 52px 36px 40px;
+    text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1274,8 +1278,26 @@
     list-style: none;
     border: 2px solid #F2F2F2;
   }
+  .product-catalog__item--last-child {
+    padding: 0 36px 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #F2F2F2;
+    list-style: none;
+    margin-bottom: 68px;
+  }
+  .product-catalog__image {
+    margin-bottom: 49px;
+  }
   .product-catalog__unit {
     margin-bottom: 33px;
+    position: relative;
+    bottom: 25px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1287,6 +1309,8 @@
   }
   .product-catalog__description {
     width: auto;
+    position: relative;
+    bottom: 35px;
     padding-bottom: 21px;
     text-align: center;
     margin: 0;
@@ -1296,9 +1320,13 @@
   }
   .product-catalog__line {
     margin: 0;
+    padding-bottom: 14px;
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 16px;
+  }
+  .product-catalog__line:last-child {
+    padding: 0;
   }
   .product-catalog__end {
     text-align: end;
@@ -1319,18 +1347,19 @@
     background-color: #5eaa2f;
   }
   .product-catalog__another {
+    padding-bottom: 23px;
     font-size: 20px;
     line-height: 22px;
     margin: 0;
   }
   .product-catalog__small {
     margin: 0;
+    padding-bottom: 87px;
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 18px;
   }
   .product-catalog__link {
-    width: 248px;
     color: #000;
     background-color: #F2F2F2;
     text-decoration: none;
@@ -1342,6 +1371,12 @@
     background-color: #ebebeb;
   }
 
+  .additional__heading {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: lighter;
+    margin: 0;
+  }
   .additional__photo {
     display: none;
   }

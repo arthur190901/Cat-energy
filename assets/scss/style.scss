@@ -1368,7 +1368,7 @@ $mobile: 719px;
   }
   .product-catalog {
     &__conection {
-      // padding: 0 36px;
+      height: 350px;
       text-align: center;
     }
 
@@ -1397,17 +1397,34 @@ $mobile: 719px;
       list-style: none;
       margin-bottom: 140px;
       &--white {
-        padding: 0 36px 40px;
+        width: 244px;
+        height: 334px;
+        padding: 52px 36px 40px;
+        text-align: center;
         display: flex;
         flex-direction: column;
         background-color: $white;
         list-style: none;
         border: 2px solid $special-grey_2;
       }
+      &--last-child {
+        padding: 0 36px 40px;  
+        display: flex;
+        flex-direction: column;
+        background-color: $special-grey_2;
+        list-style: none;
+        margin-bottom: 68px;
+      }
+    }
+
+    &__image {
+      margin-bottom: 49px;
     }
 
     &__unit {
       margin-bottom: 33px;
+      position: relative;
+      bottom: 25px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -1415,6 +1432,8 @@ $mobile: 719px;
 
     &__description {
       width: auto;
+      position: relative;
+      bottom: 35px;
       padding-bottom: 21px;
       text-align: center;
       margin: 0;
@@ -1425,9 +1444,13 @@ $mobile: 719px;
 
     &__line {
       margin: 0;
+      padding-bottom: 14px;
       font-family: Arial, sans-serif;
       font-size: 16px;
       line-height: 16px;
+      &:last-child {
+        padding: 0;
+      }
     }
 
     &__end {
@@ -1452,6 +1475,7 @@ $mobile: 719px;
     }
 
     &__another {
+      padding-bottom: 23px;
       font-size: 20px;
       line-height: 22px;
       margin: 0;
@@ -1459,13 +1483,13 @@ $mobile: 719px;
 
     &__small {
       margin: 0;
+      padding-bottom: 87px;
       font-family: Arial, sans-serif;
       font-size: 16px;
       line-height: 18px;
     }
 
     &__link {
-      width: 248px;
       color: $black;
       background-color: $special-grey_2;
       text-decoration: none;
@@ -1479,6 +1503,12 @@ $mobile: 719px;
   }
 
   .additional {
+    &__heading {
+      font-size: 36px;
+      line-height: 36px;
+      font-weight: lighter;
+      margin: 0;
+    }
     &__photo {
       display: none;
     }
