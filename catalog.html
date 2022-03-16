@@ -7,7 +7,7 @@
 </head>
 
 <body class="catalog-body">
-  <header class="main-header">
+  <header class="main-header--catalog">
     <div class="main-header__wrapper">
       <div class="main-header__logo">
        <a href="index.html"><img class="main-header__img1" src="assets/img/logo-desktop.svg" alt="page-logo"></a>
@@ -28,9 +28,9 @@
 
 
         <ul class="main-header__list">
-          <li class="main-header__link"><a class="main-header__a" href="index.html">ГЛАВНАЯ</a></li>
-          <li class="main-header__link"><a class="main-header__a--line">КАТАЛОГ ПРОДУКЦИИ</a></li>
-          <li class="main-header__link"><a class="main-header__a" href="#">ПОДБОР ПРОГРАММЫ</a></li>
+          <li class="main-header__link"><a class="main-header__a catalog" href="index.html">ГЛАВНАЯ</a></li>
+          <li class="main-header__link"><a class="main-header__a--line catalog--line">КАТАЛОГ ПРОДУКЦИИ</a></li>
+          <li class="main-header__link"><a class="main-header__a catalog" href="#">ПОДБОР ПРОГРАММЫ</a></li>
         </ul>
       </nav>
     </div>
@@ -194,7 +194,7 @@
             <a class="product-catalog__order" href="#">Заказать</a>
           </li>
 
-          <li class="product-catalog__item--last-child">
+          <li class="product-catalog__item product-catalog__item--last-child">
             <div class="product-catalog__conection">
               <img class="desktop-img" src="assets/img/catalog-desktop-7.svg" alt="desktop-version">
               <img class="mobile-img" src="assets/img/catalog-li7.svg" alt="catalog-photo7">
@@ -231,56 +231,59 @@
 
       <section class="additional">
         <h2 class="additional__heading">Дополнительные товары</h2>
-        <div class="additional__all">
-          <div class="additional__block">
-            <div class="additional__display">
-              <p class="additional__description">САХАРОЗАМЕНИТЕЛЬ</p>
-              <div class="additional__unit">
-                <p class="additional__text">1 упаковка</p>
-                <p class="additional__text">100 P.</p>
+        <div class="additional__container">
+          <div class="additional__all">
+            <div class="additional__block">
+              <div class="additional__display">
+                <p class="additional__description">САХАРОЗАМЕНИТЕЛЬ</p>
+                <div class="additional__unit">
+                  <p class="additional__text">1 упаковка</p>
+                  <p class="additional__text">100 P.</p>
+                </div>
               </div>
+              <a class="additional__order" href="#">Заказать</a>
             </div>
-            <a class="additional__order" href="#">Заказать</a>
+
+            <div class="additional__block">
+              <div class="additional__display">
+                <p class="additional__description">ПИТЬЕВАЯ ВОДА</p>
+                <div class="additional__unit">
+                  <p class="additional__text">5 литров</p>
+                  <p class="additional__text">50 Р.</p>
+                </div>
+              </div>
+              <a class="additional__order" href="#">Заказать</a>
+            </div>
+
+            <div class="additional__block">
+              <div class="additional__display">
+                <p class="additional__description">МОЛОКО</p>
+                <div class="additional__unit">
+                  <p class="additional__text">1 литр</p>
+                  <p class="additional__text">100 P.</p>
+                </div>
+              </div>
+              <a class="additional__order" href="#">Заказать</a>
+            </div>
+
+            <div class="additional__block">
+              <div class="additional__display">
+                <p class="additional__description">ВИТАМИНЫ</p>
+                <div class="additional__unit">
+                  <p class="additional__text">1 упаковка (30 г)</p>
+                  <p class="additional__text">300 P.</p>
+                </div>
+              </div>
+              <a class="additional__order" href="#">Заказать</a>
+            </div>
           </div>
 
-          <div class="additional__block">
-            <div class="additional__display">
-              <p class="additional__description">ПИТЬЕВАЯ ВОДА</p>
-              <div class="additional__unit">
-                <p class="additional__text">5 литров</p>
-                <p class="additional__text">50 Р.</p>
-              </div>
-            </div>
-            <a class="additional__order" href="#">Заказать</a>
-          </div>
-
-          <div class="additional__block">
-            <div class="additional__display">
-              <p class="additional__description">МОЛОКО</p>
-              <div class="additional__unit">
-                <p class="additional__text">1 литр</p>
-                <p class="additional__text">100 P.</p>
-              </div>
-            </div>
-            <a class="additional__order" href="#">Заказать</a>
-          </div>
-
-          <div class="additional__block">
-            <div class="additional__display">
-              <p class="additional__description">ВИТАМИНЫ</p>
-              <div class="additional__unit">
-                <p class="additional__text">1 упаковка (30 г)</p>
-                <p class="additional__text">300 P.</p>
-              </div>
-            </div>
-            <a class="additional__order" href="#">Заказать</a>
-          </div>
+          <a class="additional__background" href="#">
+            <img class="additional__for-desktop" src="assets/img/gift__for_desktop.svg" alt="desktop desktop-version">
+            <img class="additional__desktop" src="assets/img/gift-block-desktop.svg" alt="gift tablet-version">
+            <img class="additional__photo" src="assets/img/gift-background.svg" alt="Cat-catalog">
+          </a>
         </div>
-
-        <a class="additional__background" href="#">
-          <img class="additional__desktop" src="assets/img/gift-block-desktop.svg" alt="gift desktop-version">
-          <img class="additional__photo" src="assets/img/gift-background.svg" alt="Cat-catalog">
-        </a>
       </section>
     </div>
   </main>
@@ -329,8 +332,8 @@
           </a></li>
         </ul>
         <div href="#" class="footer__div">
-          <a class="footer__link" href="#">HTML Academy</a>
-          <a href="#" class="footer__link-logo"><img id="logo" src="../cat-energy/assets/img/Лого_html 1.svg" alt="html academy log"></a>
+          <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__link-logo"><img id="logo" src="../cat-energy/assets/img/Лого_html 1.svg" alt="html academy log"></a>
         </div>
       </div>
     </section>
