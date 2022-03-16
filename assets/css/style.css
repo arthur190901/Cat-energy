@@ -1454,10 +1454,6 @@
     opacity: 0.3;
   }
 
-  .for-desktop {
-    display: none;
-  }
-
   .desktop-img {
     position: relative;
     bottom: 85px;
@@ -1626,6 +1622,9 @@
     background-color: #ebebeb;
   }
 
+  .additional__for-desktop {
+    display: none;
+  }
   .additional__heading {
     margin: 0 0 80px;
     font-size: 36px;
@@ -2417,6 +2416,9 @@
   }
   .main-catalog .product-catalog__link:hover {
     background-color: #ebebeb;
+  }
+  .main-catalog .additional__for-desktop {
+    display: none;
   }
   .main-catalog .additional__desktop {
     display: none;

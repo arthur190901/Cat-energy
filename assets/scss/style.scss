@@ -1590,9 +1590,6 @@ $mobile: 719px;
 
 
 
-  .for-desktop {
-    display: none;
-  }
 
   .desktop-img {
     position: relative;
@@ -1752,6 +1749,10 @@ $mobile: 719px;
   }
 
   .additional {
+    &__for-desktop {
+      display: none;
+    }
+
     &__heading {
       margin: 0 0 80px;
       font-size: 36px;
@@ -2672,6 +2673,9 @@ $mobile: 719px;
     }
 
     .additional {
+      &__for-desktop {
+        display: none;
+      }
       &__desktop {
         display: none;
       }
