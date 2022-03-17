@@ -401,6 +401,7 @@
   }
   .example__container {
     width: 1220px;
+    height: 400px;
     margin: 0 auto;
     padding-top: 70px;
     display: -webkit-box;
@@ -475,7 +476,23 @@
     height: 6px;
     margin: 0 20px;
     border: 0;
+    border-radius: 6px;
     background-color: #dcdcdc;
+  }
+  .example__taggle::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 34px;
+    height: 34px;
+    background-color: #68B738;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .example__taggle::-webkit-slider-thumb:hover {
+    background-color: #5eaa2f;
+    -webkit-box-shadow: 0 0 5px #000;
+            box-shadow: 0 0 5px #000;
   }
   .example__button {
     padding: 0;
@@ -1303,7 +1320,23 @@
     height: 6px;
     margin: 0 20px;
     border: 0;
+    border-radius: 6px;
     background-color: #dcdcdc;
+  }
+  .main .example__taggle::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 34px;
+    height: 34px;
+    background-color: #68B738;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .main .example__taggle::-webkit-slider-thumb:hover {
+    background-color: #5eaa2f;
+    -webkit-box-shadow: 0 0 5px #000;
+            box-shadow: 0 0 5px #000;
   }
   .main .example__button {
     padding: 0;
