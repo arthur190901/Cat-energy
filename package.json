@@ -1,0 +1,26 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "cat-energy",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthur190901/Cat-energy.git"
+  },
+  "author": "Arthur190901",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arthur190901/Cat-energy/issues"
+  },
+  "homepage": "https://github.com/arthur190901/Cat-energy#readme",
+  "dependencies": {
+    "stylelint": "^14.6.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.2.0"
+  },
+  "type": "module"
+}
