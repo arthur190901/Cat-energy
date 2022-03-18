@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/arthur190901/Cat-energy#readme",
   "dependencies": {
+    "postcss-scss": "^4.0.3",
     "stylelint": "^14.6.0",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-config-standard-scss": "^3.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
     "stylelint-order": "^5.0.0",
     "stylelint-scss": "^4.2.0"
