@@ -1,12 +1,12 @@
 import gulp from 'gulp'
 import htmlmin from 'gulp-htmlmin'
 import fileinclude from 'gulp-file-include'
-// import scss from 'gulp-scss'
-// import fontmin from 'gulp-fontmin'
+import cssmin from 'gulp-cssmin'
+import fontmin from 'gulp-fontmin'
 import image from 'gulp-image'
 import jsmin from 'gulp-jsmin'
-// import clean from 'gulp-clean'
-// import browsersync from 'browser-sync'
+import clean from 'gulp-clean'
+import browsersync from 'browser-sync'
 
 function html() {
   return gulp
@@ -22,23 +22,23 @@ function html() {
 }
 gulp.task(html)
 
-// function scss() {
-//   return gulp
-//     .src('assets/scss/style.scss')
-//     .pipe(scss())
-//     .pipe(gulp.dest('build/assets/scss'))
-// }
-// gulp.task(scss)
+function css() {
+  return gulp
+    .src('assets/css/style.css')
+    .pipe(cssmin())
+    .pipe(gulp.dest('build/assets/css'))
+}
+gulp.task(css)
 
-// function font() {
-//   return gulp.src('assets/fonts/*.ttf *.woff *.EOT ').pipe(gulp.dest('build/assets/fonts'))
-// }
-// gulp.task(font)
+function font() {
+  return gulp.src(['assets/fonts/*.ttf', '*.woff', '*svg', '*eot']).pipe(gulp.dest('build/assets/fonts'))
+}
+gulp.task(font)
 
-// function favicon() {
-//   return gulp.src('favicon.png').pipe(gulp.dest('build/'))
-// }
-// gulp.task(favicon)
+function favicon() {
+  return gulp.src('assets/favicons/*.png').pipe(gulp.dest('build/assets/favicons'))
+}
+gulp.task(favicon)
 
 function img() {
   return gulp
@@ -67,9 +67,9 @@ function js() {
 }
 gulp.task(js)
 
-// function deleteBuild() {
-//   return gulp.src('build', { read: false, allowEmpty: true }).pipe(clean())
-// }
-// gulp.task(deleteBuild)
+function deleteBuild() {
+  return gulp.src('build', { read: false, allowEmpty: true }).pipe(clean())
+}
+gulp.task(deleteBuild)
 
-// gulp.task('start', gulp.series(deleteBuild, html, font, favicon, css, img, js))
+gulp.task('start', gulp.series(deleteBuild, html, font, favicon, css, img, js))
