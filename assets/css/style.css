@@ -78,6 +78,10 @@
 }
 
 @media (min-width: 1260px) {
+  .test {
+    color: #68B738;
+  }
+
   .hr1 {
     display: none;
   }

@@ -25,5 +25,16 @@
     "stylelint-order": "^5.0.0",
     "stylelint-scss": "^4.2.0"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "browser-sync": "^2.27.9",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-fontmin": "^0.7.4",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-image": "^6.3.1",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-scss": "^1.4.0"
+  }
 }
