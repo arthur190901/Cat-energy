@@ -542,6 +542,48 @@ $mobile: 719px;
       position: relative;
       bottom: 215px;
     }
+
+    &__for {
+      transform: translateX(0);
+      transition: .5s;
+      height: 536px;
+      position: relative;
+      width: 610px;
+      margin: 0 0 0 100px;
+      display: -webkit-box;
+      align-items: center;
+    }
+
+    &__ch1 {
+      background-image: url('../img/before-cat.png');
+      background-position: -41px 0;
+      width: 50%;
+      max-width: 100%;
+      z-index: 20;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    &__ch2 {
+      background-image: url('../img/after-cat.png');
+      width: 50%;
+      max-width: 100%;
+      background-position: -59px 0;
+      transform: scaleX(-1);
+      direction: rtl;
+      left: auto;
+      right: 0;
+      z-index: 10;
+      position: absolute;
+      top: 0;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
   }
 
   .footer {
@@ -1381,6 +1423,46 @@ $mobile: 719px;
         display: flex;
         align-items: center;
         justify-content: end;
+      }
+
+      &__for {
+        transform: translateX(0);
+        transition: .5s;
+        height: 536px;
+        position: relative;
+        width: 610px;
+        margin: 0 0 0 118px;
+        display: -webkit-box;
+        align-items: center;
+      }
+  
+      &__ch1 {
+        background-image: url('../img/before-cat.png');
+        background-position: -41px 0;
+        width: 50%;
+        z-index: 20;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+  
+      &__ch2 {
+        background-image: url('../img/after-cat.png');
+        width: 50%;
+        background-position: -59px 0;
+        transform: scaleX(-1);
+        direction: rtl;
+        left: auto;
+        right: 0;
+        z-index: 10;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
       }
     }
   }  
@@ -2572,3 +2654,8 @@ $mobile: 719px;
     }
   }
 }
+
+
+
+
+
