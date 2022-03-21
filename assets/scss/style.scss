@@ -94,8 +94,10 @@ $mobile: 719px;
   }
 }
 
-
 @media (min-width: $desktop) {
+  .test {
+    color: $green;
+  }
   .hr1 {
     display: none;
   }
@@ -423,12 +425,6 @@ $mobile: 719px;
       justify-content: space-between;
     }
 
-    // &__heading {
-    //   font-size: 60px;
-    //   font-weight: lighter;
-    //   margin-bottom: 146px;
-    // }
-
     &__text {
       margin: 0;
       font-family: 'Arial', sans-serif;
@@ -499,6 +495,7 @@ $mobile: 719px;
       background-color: $special-grey_3;
       &::-webkit-slider-thumb {
         -webkit-appearance: none;
+        position: relative;
         width: 34px;
         height: 34px;
         background-color: $green;
@@ -544,6 +541,48 @@ $mobile: 719px;
       width: 690px;
       position: relative;
       bottom: 215px;
+    }
+
+    &__for {
+      transform: translateX(0);
+      transition: .5s;
+      height: 536px;
+      position: relative;
+      width: 610px;
+      margin: 0 0 0 100px;
+      display: -webkit-box;
+      align-items: center;
+    }
+
+    &__ch1 {
+      background-image: url('../img/before-cat.png');
+      background-position: -41px 0;
+      width: 50%;
+      max-width: 100%;
+      z-index: 20;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    &__ch2 {
+      background-image: url('../img/after-cat.png');
+      width: 50%;
+      max-width: 100%;
+      background-position: -59px 0;
+      transform: scaleX(-1);
+      direction: rtl;
+      left: auto;
+      right: 0;
+      z-index: 10;
+      position: absolute;
+      top: 0;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
   }
 
@@ -689,16 +728,7 @@ $mobile: 719px;
   }
 
 
-
-
-
-
-
   //catalog desktop
-
-
-
-
 
 
   .catalog-body {
@@ -744,7 +774,6 @@ $mobile: 719px;
   }
   .product-catalog {
     &__conection {
-      // height: 350px;
       text-align: center;
     }
 
@@ -877,12 +906,26 @@ $mobile: 719px;
   }
 
   .additional {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: $green;
+      z-index: -1;
+      top: 23px;
+    }
+
     &__heading {
+      padding: 0 40px;
+      background-color: $white;
       font-size: 36px;
       font-weight: lighter;
       line-height: 36px;
-      margin: 0;
+      margin: 0 0 0 40px;
       padding-bottom: 81px;
+      display: inline-block;;
     }
     
     &__description {
@@ -953,14 +996,7 @@ $mobile: 719px;
 }
 
 
-
-
-
 // media tablet
-
-
-
-
 
 
 @media (min-width:$tablet) and (max-width:$desktop) {
@@ -1168,37 +1204,13 @@ $mobile: 719px;
         font-size: 20px;
         color: $black;
       }
-      
-      &__container {
-        // &::after {
-        //   content: '';
-        //   background-image: url('../img/cat_back_tablet.svg');
-        //   background-repeat: no-repeat;
-        //   width: 200px;
-        //   height: 211px;
-        //   position: absolute;
-        //   display: block;
-        //   right: 0;
-        //   top: 0;
-        // }
-        // width: 467px;
-        // display: flex;
-        // flex-grow: 1;
-        // flex-direction: row;
-        // flex-wrap: wrap;
-        // align-items: flex-start;
-      }
   
       &__pic1 {
         display: none;
-        // width: 200px;
-        // height: 211px;
       }
   
       &__pic2 {
         display: none;
-        // width: 268px;
-        // height: 200px;
       }
   
       &__long {
@@ -1412,17 +1424,46 @@ $mobile: 719px;
         align-items: center;
         justify-content: end;
       }
+
+      &__for {
+        transform: translateX(0);
+        transition: .5s;
+        height: 536px;
+        position: relative;
+        width: 610px;
+        margin: 0 0 0 118px;
+        display: -webkit-box;
+        align-items: center;
+      }
   
-      // &__div {
-      //   width: 436px;
-      //   margin: 0;
-      // }
+      &__ch1 {
+        background-image: url('../img/before-cat.png');
+        background-position: -41px 0;
+        width: 50%;
+        z-index: 20;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
   
-      // &__content {
-      //   width: 690px;
-      //   position: relative;
-      //   bottom: 215px;
-      // }
+      &__ch2 {
+        background-image: url('../img/after-cat.png');
+        width: 50%;
+        background-position: -59px 0;
+        transform: scaleX(-1);
+        direction: rtl;
+        left: auto;
+        right: 0;
+        z-index: 10;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
     }
   }  
 
@@ -1458,10 +1499,6 @@ $mobile: 719px;
 
     &__section2 {
       background-color: $special-grey_2;
-      // display: flex;
-      // flex-wrap: wrap;
-      // justify-content: space-between;
-      // align-items: center;
     }
 
     &__list {
@@ -1551,15 +1588,7 @@ $mobile: 719px;
   }
 
 
-
-
-
-
-
   //catalog-tablet
-
-
-
 
 
   .desktop-img {
@@ -1729,18 +1758,6 @@ $mobile: 719px;
       font-size: 36px;
       line-height: 36px;
       font-weight: lighter;
-      // &::before {
-      //   content: "";
-      //   display: block;
-      //   right: 100%;
-      //   position: absolute;
-      //   top: 0;
-      //   width: 100vw;
-      //   height: 3px;
-      //   margin-top: calc(1em/2 + 3px);
-      //   background-color: #68b738;
-      //   z-index: -1;
-      // }
     }
 
     &__all {
@@ -1805,16 +1822,7 @@ $mobile: 719px;
 }
 
 
-
-
-
-
-
-
 // media mobile 
-
-
-
 
 
 @media all and (max-width: $mobile) {
@@ -1933,13 +1941,6 @@ $mobile: 719px;
     &__logo2 {
       padding-right: 15px;
     }
-
-  //   &__link {
-  //     font-size: 18px;
-  //     padding-left: 35px;
-  //     list-style: none;
-  //     padding-top: 0px;
-  //   }
   }
 
   .main {
@@ -1963,7 +1964,6 @@ $mobile: 719px;
         font-size: 20px;
         line-height: 20px;
         padding: 23px 20px;
-        // box-shadow: inset 0 1px 0 #e6e6e6;
 
         &--disabled {
           display: block;
@@ -1999,7 +1999,6 @@ $mobile: 719px;
         margin: 0;
         line-height: 36px;
         padding-top: 27px;
-        // width: 414px;
         padding-bottom: 25px;
       }
 
@@ -2011,6 +2010,7 @@ $mobile: 719px;
       }
 
       &__button {
+        order: 2;
         display: grid;
         padding: 11px 0;
         line-height: 18px;
@@ -2026,16 +2026,10 @@ $mobile: 719px;
         }
       }
 
-      &__exsept {
-        // margin-left: 112px
-      }
-
       &__pic {
+        order: 1;
         width: 280px;
         height: 270px;
-        // position: relative;
-        // bottom: 65px;
-        // z-index: -1;
       }
     }
 
@@ -2095,14 +2089,12 @@ $mobile: 719px;
         width: 50px;
         height: 53px;
         margin-right: 19px;
-        // margin-bottom: 39px;
       }
   
       &__pic2 {
         width: 67px;
         height: 50px;
         margin-right: 11px;
-        // margin-bottom: 39px;
       }
   
       &__long {
@@ -2236,12 +2228,6 @@ $mobile: 719px;
         margin-bottom: 25px;
       }
   
-      // &__state {
-      //   width: 365px;
-      //   margin-top: 69px;
-      //   text-align: center;
-      // }
-  
       &__num {
         font-size: 14px;
         line-height: 20px;
@@ -2257,11 +2243,6 @@ $mobile: 719px;
         flex-wrap: wrap;
         justify-content: center;
       }
-
-      &__image {
-        width: 311px;
-        height: 232px;
-      }
       
       &__taggle {
         -webkit-appearance: none;
@@ -2271,34 +2252,6 @@ $mobile: 719px;
         border: 1px solid $special-grey_3;
         background-color: $white;
         border-radius: 10px;
-        // &::-webkit-slider-runnable-track {
-        //   height: 10px;
-        //   -webkit-appearance: none;
-        //   color: #13bba4;
-        //   margin-top: -1px;
-        // }
-        // &::-webkit-slider-thumb {
-        //   width: 10px;
-        //   -webkit-appearance: none;
-        //   height: 10px;
-        //   cursor: ew-resize;
-        //   background: #434343;
-        //   box-shadow: -80px 0 0 80px #43e5f7;
-        // }
-        // &::-moz-range-progress {
-        //   background-color: #43e5f7;
-        // }
-        // &::-moz-range-track {
-        //   background-color: #9a905d;
-        // }
-        
-        // &::-ms-fill-lower {
-        //   background-color: #43e5f7;
-        // }
-        
-        // &::-ms-fill-upper {
-        //   background-color: #9a905d;
-        // }
       }
       
       &__button {
@@ -2324,35 +2277,26 @@ $mobile: 719px;
       &__content {
         margin: 0 auto;
       }
+
+      &__for {
+        width: 100%;
+        height: 250px;
+      }
+  
+      &__ch1 {
+        background-image: url('../img/before-mobile.svg');
+        background-repeat: no-repeat;
+        height: 100%;
+      }
+  
+      &__ch2 {
+        
+      }
     }
   }
 
   .footer {
     background-color: $special-grey_2;
-    // &__section {
-    //   height: 84px;
-    //   display: flex;
-    //   position: relative;
-    //   padding: 64px 76px 52px;
-    //   background-color: $white;
-    //   max-width: 1220px;
-    //   width: 408px;
-    //   top: 310px;
-    //   z-index: 2;
-    // }
-
-  //   &__text {
-  //     font-size: 20px;
-  //     margin: 0;
-  //     max-width: 163px;
-  //   }
-
-  //   &__text2 {
-  //     font-family: Arial, sans-serif;
-  //     font-size: 16px;
-  //     margin: 0;
-  //   }
-
     &__map {
       background-color: $special-grey_2;
     }
@@ -2419,9 +2363,6 @@ $mobile: 719px;
       padding-left: 20px;
       padding-right: 20px;
       text-align: center;
-      // margin: 0 auto;
-      // display: flex;
-      // justify-content: space-between;
       align-items: center;
     }
 
@@ -2435,8 +2376,6 @@ $mobile: 719px;
         opacity: 0.6;
       }
     }
-
-    
 
     &__social {
       &--vk {
@@ -2477,30 +2416,15 @@ $mobile: 719px;
   }
 
   .close {
-    // background-image: url('../img/close_black_36dp.svg');
-    // background-repeat: no-repeat;
-    // position: relative;
-    // bottom: 8px;
-    // right: 6px;
     position: absolute;
     width: 29px;
     height: 29px;
   }
 
 
-
-
-
-
-
   //catalog
 
 
-
-
-
-
-  
   .for-desktop {
     display: none;
   }
@@ -2719,7 +2643,6 @@ $mobile: 719px;
         font-size: 20px;
         line-height: 20px;
         padding: 23px 20px;
-        // box-shadow: inset 0 1px 0 #e6e6e6;
 
         &--disabled {
           display: block;
@@ -2743,26 +2666,6 @@ $mobile: 719px;
 }
 
 
-
-
-
-
-  
-
-
-
-  
-
-
-    
-
-    
-
-    
-
-
-    
-    
 
 
 

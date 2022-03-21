@@ -50,7 +50,6 @@
         </ul>
       </section>
 
-    
       <section class="programm">
         <div class="programm__exsept">
           <h2 class="visually-hidden">Программа питаня</h2>
@@ -62,6 +61,7 @@
           </p>
           <a href="#" class="programm__button" type="button">ПОДОБРАТЬ ПРОГРАММУ</a>
         </div>
+        
         <img class="programm__pic" src="assets/img/index-can.svg" alt="index-can">
       </section>
 
@@ -175,10 +175,13 @@
           </div>
         </div>
         <div class="example__content">
-          <img class="example__image" id="image" src="https://zateya.github.io/cat-energy/img/before@1x.webp" alt="cats" width="690" height="517">
+          <div class="example__for">
+            <div class="example__ch1" id="image1"></div>
+            <div class="example__ch2" id="image2"></div>
+          </div>
           <div class="example__conect">
             <button class="example__button" id="before" type="button">Было</button>
-            <input class="example__taggle" type="range" min="1" max="100" value="50">
+            <input class="example__taggle" type="range" min="0  " max="100" value="50">
             <button class="example__button" id="after" type="button">Стало</button>
           </div>
         </div>
@@ -187,21 +190,6 @@
   </main>
 
   <footer class="footer">
-    <!-- <section class="footer__section">
-      <h2 class="visually-hidden">footer</h2>
-      <div class="footer__container">
-        <p class="footer__text">
-          <br>ПРИГЛАШАЕМ 
-          <br>К СОТРУДНИЧЕСТВУ 
-          <br>ДИЛЕРОВ!
-        </p>
-        <p class="footer__text2">
-          ул. Немировича-Данченко, д. 69/В
-          <br>Ростов-на-Дону
-        </p>
-      </div>
-    </section> -->
-
     <section class="footer__map">
       <h2 class="visually-hidden">map</h2>
       <div id="map" style="width: 100%; height: 400px"></div>
@@ -228,12 +216,13 @@
         </ul>
         <div href="#" class="footer__div">
           <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__link-logo"><img id="logo" src="../cat-energy/assets/img/Лого_html 1.svg" alt="html academy log"></a>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__link-logo"><img id="logo" src="assets/img/Лого_html 1.svg" alt="html academy log"></a>
         </div>
       </div>
     </section>
   </footer>
-
+  <script src="assets/js/slider.js"></script>
   <script src="assets/js/script.js"></script>
+  <script src="assets/js/map.js"></script>
 </body>
 </html>
